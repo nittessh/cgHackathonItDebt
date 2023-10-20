@@ -1,0 +1,56 @@
+.content {
+  /* background-image:url("Capgemini-Emblem.png"); */
+  /* background-size: 90%; */
+  width: 100%;
+  padding-bottom : 40px;
+  height: 550px;
+  /* background-color: rgba(121, 116, 116, 0.53);  */
+}
+
+.container {
+  top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  /* height: 100vh; */
+}
+
+.sidebar {
+  display: fixed;
+  width: 300px;
+  background-color: #000000;
+  padding: 20px ;
+  }
+
+.footer {
+  background-color: #282c34;
+  height: 7%;
+  font-size: small;
+  text-align: center;
+  color: white;
+  padding: 1px;
+  position: absolute;
+  /* bottom: 0; */
+  width: 100%;
+  /* size: 1%; */
+}
+
+.button{
+  border-color: aliceblue;
+  background-color: #a1a1a1; 
+  border-radius: 12px;
+  /* border: 10px; */
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: white;
+}

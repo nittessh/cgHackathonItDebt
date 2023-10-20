@@ -1,0 +1,27 @@
+.body{
+    padding: 20px;
+    height: 550px;
+    background-color: rgba(121, 116, 116, 0.53) ; 
+}
+
+.body button{
+    font-size: 15px;	
+	padding: 10px 20px;
+}
+
+select{
+    font-size: 15px;	
+	padding: 5px;
+	align: left;
+}
+
+.myContainer
+{
+	padding: 0 10% 0 10%;
+}
+
+th
+{
+	background-color: #46C0FC;
+	color: #04496A;
+}
