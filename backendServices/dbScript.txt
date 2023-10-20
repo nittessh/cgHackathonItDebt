@@ -1,0 +1,123 @@
+DBName :ITDebt
+Table name : Asset
+Column name: 
+1.Asset_id,
+2.Asset_type
+3.Asset_name,
+4.license_id, 
+5.license_date
+6.license_type
+7.Patched_date
+8.provision_date
+9.Asset_cost_year
+10.cpu_type 
+11.application_databse
+12.version_of_OS
+13.warranty_available
+14.Expiry_Date
+15.Asset_location
+16.Brand
+17.Model
+18.Status
+19.Category
+20.Condition(Ex.Damaged/New)
+21.Maximum_user_allowed_per_licence
+22.cpu_type
+23.memory_utilization
+24.Serial_number
+
+CREATE TABLE Asset(
+Asset_id VARCHAR PRIMARY KEY NOT NULL,
+Asset_type VARCHAR(50),
+Asset_name VARCHAR(100),
+Brand VARCHAR(50),
+Model VARCHAR(30),
+Serial_number VARCHAR(30),
+cpu_type varchar(30),
+memory_utilization int,
+Asset_location VARCHAR(50),
+Status VARCHAR(30),
+Category VARCHAR(50),
+Condition VARCHAR(30),
+license_id VARCHAR(50),
+license_date timestamp,
+license_type VARCHAR(50),
+Patched_date timestamp,
+provision_date timestamp,
+Asset_cost_year VARCHAR(30),
+application_databse VARCHAR(30),
+version_of_OS VARCHAR(30),
+warranty_available VARCHAR(10),
+Expiry_Date timestamp,
+Maximum_user_allowed_per_licence int
+);
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('aw2304qws1','Mouse','mouse','HP','2354P','1230GHR221HJ','-',10,'Pune','available','hardware','old','23123sddsd','2018-10-11 12:23:44','single user','2023-10-5 12:23:44','2016-10-5 12:23:44','340','-','-','no','2030-10-5 23:59:59',2);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('ps2304qws1','Laptop','laptop','lenovo','232342P','3430GHR221HJ','Intel® Core™ i3',50,'Hyderabad','available','hardware','New','21232423sddsd','2023-08-11 12:23:44','single user','2023-10-4 12:23:44','2022-10-5 12:23:44','30000','-','windows','no','2031-10-5 23:59:59',2);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('ps2244qws1','Laptop','laptop','Dell','2321232P','3430GHR23WHJ','AMD Ryzen™ 9 6900HX',60,'Banglore','available','hardware','old','212123423spfdsd','2020-08-11 12:23:44','single user','2023-10-3 12:23:44','2022-10-5 12:23:44','30000','-','linux','no','2033-10-5 23:59:59',3);
+
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('AZ2244qw12','Laptop','laptop','Azus','2897421232P','2432GHR23WHJ','Intel® Core™ i5',60,'Hyderabad','available','hardware','New','2123133423spgvsd','2021-08-11 12:23:44','single user','2023-09-03 12:23:44','2021-12-6 12:23:44','35000','-','Windows 10','no','2034-11-5 23:59:59',5); 
+
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('PH224423423','Headset','headset','Philips','38974122P','2892GHR23WHJ','-',60,'Delhi','available','hardware','New','2123133423spgvsd','2023-10-01 12:23:44','single user','2023-10-03 01:23:44','2023-10-01 12:23:44','5000','-','not available','no','2035-11-5 23:59:59',1); 
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('KY224423423','keyboard','keybord','hp','38727672P','2892PRK23WHJ','-',0,'Noida','available','hardware','New','2dsfd3423spgvsd','2023-10-02 11:23:44','single user','2023-10-03 02:23:44','2023-10-01 10:23:44','350','-','not available','no','2033-11-5 23:59:59',1);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('AB224423423','desktop','desktop','Dell','323447672D','3092PRK23WHJ','intel i5',70,'Gurgaon',' not available','hardware','old','3d232423spgvsd','2023-10-04 11:23:44','single user','2023-10-05 02:23:44','2023-10-01 11:23:44','350','-','not available','no','2032-10-6 23:59:59',1);
+
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('HD224426423','hard Disk','hard Disk','samsung','423447672S','30232PRK23WHJ','-',0,'Pune',' not available','hardware','New','3123423spgvsd','2023-10-01 09:23:44','single user','2023-10-05 01:23:44','2023-10-02 11:23:44','350','-','not available','no','2032-10-5 23:59:59',2);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('AS254426423','Motherboard','Motherboard','azus','526447672S','34022432PRK23WHJ','-',0,'Mumbai',' available','hardware','New','4123423sd','2023-09-01 10:23:44','single user','2023-10-05 04:23:44','2023-10-02 11:23:44','4000','-','YES','no','2032-12-3 23:59:59',1);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('BZ254426423','Monitor','Monitor','azus','626447672S','45022432PRK23WJ','-',0,'Chennai',' not available','hardware','old','5123423sd','2023-09-05 10:24:44','single user','2023-08-05 04:23:44','2023-10-03 11:23:44','3000','-','YES','no','2031-12-03 23:59:59',1);
+
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('PR254426423','Printer','Printer','HP','87657672S','55022432PRK23WJ','-',0,'Mumbai',' not available','hardware','old','6123423sd','2023-08-05 10:24:44','Multi user','2023-08-04 03:23:44','2023-10-05 11:23:44','15000','-','YES','no','2032-12-03 23:59:59',1);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('sp254426233','speaker','speaker','JBL','99657672S','66022432PRK23WJ','-',0,'Trichy',' not available','hardware','old','6123423sd','2023-07-05 12:24:44','Multi user','2023-08-02 03:23:44','2023-10-08 10:23:45','8000','-','YES','no','2038-12-03 23:59:59',1);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('CM254426233','Computer Memory','Computer Memory','Micron Technology ','923457672S','545232432PRK23WJ','-',0,'Delhi',' not available','hardware','new','61234233423sd','2023-06-05 18:24:44','single user','2023-07-02 02:23:44','2023-10-06 10:23:45','8000','-','YES','no','2035-11-03 23:59:59',1);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('NT254426233','Modem','Modem','D-Link','34563457672S','5468232432PRK23WJ','-',0,'mumbai',' available','hardware','old','71234233423sd','2023-07-28 18:24:44','single user','2023-07-29 02:23:44','2023-10-08 11:35:45','8000','-','YES','no','2034-11-03 23:59:59',1);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('NT254426234','Network Switch','Network Switch','Cisco','4453457672N','8878232432PRK23WJ','-',0,'Nagpur',' available','hardware','New','43234233423sd','2023-09-28 18:24:44','single user','2023-09-30 02:23:44','2023-10-07 11:35:45','8000','-','YES','no','2034-10-03 23:59:59',1);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('NT254426235','web camera','web camera','Logitech','4451232N','9978232432PRK23KR','-',0,'Mumbai',' available','hardware','New','56234233423sd','2023-09-30 18:24:44','single user','2023-10-01 02:23:44','2023-10-08 11:35:45','8000','-','YES','no','2033-10-03 23:59:59',1);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('CM254156235','processor','processor','intel','3653454N','923458232432PRK23KR','-',0,'Mumbai',' available','hardware','New','56234233423sd','2023-10-01 17:24:54','single user','2023-10-02 02:23:44','2023-10-04 12:35:45','8000','-','YES','no','2035-10-03 23:59:59',1); 
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('PC254156235','PC headset','PC headset','Corsair','HS65','91223243RT','-',0,'Pune',' available','hardware','New','57654233423sd','2023-10-02 19:24:54','single user','2023-10-04 03:23:44','2023-10-05 11:38:45','8000','-','YES','no','2036-10-01 23:59:59',1);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('SC2343423422','Scanner','PC headset','Epson','HS65123','95223243RT','-',0,'Pune',' available','hardware','New','58654233423sd','2023-10-03 19:24:54','single user','2023-10-04 03:23:44','2023-10-05 12:38:45','15000','-','YES','no','2036-10-01 23:59:59',3);
+
+
+
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('BR2343423423','Barcode Reader','Barcode Reader','PEGASUS','PS1218','96223243RT','-',0,'Pune',' not available','hardware','New','59654233423sd','2023-10-02 18:25:54','single user','2023-10-03 03:23:44','2023-10-05 12:38:45','11000','-','YES','no','2030-10-01 23:59:59',3);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('OFCU634254337465','license','microsoft office suit','office','1200064','93654972367T','-',0,'Hyderabad',' not available','software','old','57673234333423sd','2017-10-01 18:26:54','multi user','2017-04-02 03:23:44','2018-11-06 12:38:45','6000','-','not available','no','2021-10-02 23:59:59',3);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('OFCU6123454337465','license','antivirus','quickheal','12123064','94654972367T','-',0,'Delhi',' not available','software','old','5234573234333423sd','2016-10-01 18:26:54','single user','2017-04-02 03:23:44','2017-04-08 12:38:45','1000','-','not available','no','2019-10-02 23:59:59',1);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('OFCU612345123447465','license','antivirus','Mcaffe','12133064','95654972367T','-',0,'Goa',' not available','software','old','5232454333423sd','2015-10-01 18:26:54','single user','2015-04-02 03:23:44','2015-04-08 12:38:45','1000','-','windows','no','2018-10-02 23:59:59',2);
+
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('OFCU61234527467465','license','Freshdesk_ticketing tool','freshdesk','12123647','9562372367T','-',0,'Banglore',' not available','software','old','5232343333423sd','2016-10-01 18:26:54','single user','2016-04-02 03:23:44','2016-04-08 12:38:45','50000','-','not available','no','2017-10-02 23:59:59',2);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('OFCU6123456467465','license','DB2','IBM','1212345','95623467T','-',0,'Banglore',' not available','software','old','5232343333423sd','2013-10-01 18:26:54','single user','2013-04-02 03:23:44','2013-04-08 12:38:45','50000','-','not available','no','2016-10-02 23:59:59',2);
+
+INSERT INTO asset(Asset_id,Asset_type,Asset_name,Brand,Model,Serial_number,cpu_type,memory_utilization,Asset_location,Status,Category,Condition,license_id,license_date,license_type,Patched_date,provision_date,Asset_cost_year,application_databse,version_of_OS,warranty_available,Expiry_Date,Maximum_user_allowed_per_licence) VALUES ('OFCU6112323465','license','windows OS','Microsoft','12123245','95623467T','-',0,'Banglore',' not available','software','old','5232312323423sd','2013-10-01 18:26:54','single user','2018-04-02 03:23:44','2019-04-08 12:38:45','50000','-','windows 10','no','2022-10-02 23:59:59',2);
